@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FAB6ED115F39AC9B3ABA8E4 /* QuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B33A0D852CD1AD0339CB8C /* QuoteStore.swift */; };
+		11BD38CF67216BFA0A4AFE7F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB807D4EA706EE915D69773 /* Quote.swift */; };
+		20A947EFD6D8543C0B9DDD81 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821F9E05102A3923AC2CC1D /* SharedConstants.swift */; };
+		211D31B480170705A7376A31 /* WidgetRefreshIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC39BD347B6E4FE65251B /* WidgetRefreshIntent.swift */; };
+		4869C13402F4633BE92E2B1F /* WidgetRefreshIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC39BD347B6E4FE65251B /* WidgetRefreshIntent.swift */; };
+		7EB205EBF589AF7E3A303FFD /* Notion Quotes Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FFD5BCAABBF7AD75B9BD924 /* Notion Quotes Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8698538D51283E66D2868769 /* NotionQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73840FF972449026C65E8C1C /* NotionQuotesApp.swift */; };
+		9ACFEE7A4B4BA74EE4C4C6CC /* SharedFileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FF865250B2BB90D82B194 /* SharedFileConfig.swift */; };
+		B07A835ACD4218946121509E /* QuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B33A0D852CD1AD0339CB8C /* QuoteStore.swift */; };
+		B3C87003795D5A7CBB5C1795 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FFDAB24B1149AD7FFC37FD /* AppViewModel.swift */; };
+		B8CCCA181436432CC226E9C7 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821F9E05102A3923AC2CC1D /* SharedConstants.swift */; };
+		C22097DB6BC8C42E1DA7E0A4 /* NotionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C382AE021050E5961C9B57B /* NotionAPI.swift */; };
+		C49D2161C1FFE96D49938B92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9261541AD29C00A6AB2296 /* ContentView.swift */; };
+		CBBE96EE87D1BF764D39F87F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB807D4EA706EE915D69773 /* Quote.swift */; };
+		D1F561DC462D5BFE64116DED /* SharedFileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FF865250B2BB90D82B194 /* SharedFileConfig.swift */; };
+		D8FB57F7997A0882BCFCF172 /* NotionQuotesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E300F7A72DBFA4B7604CF1 /* NotionQuotesWidget.swift */; };
+		EA880990A09848825842D6DB /* NotionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C382AE021050E5961C9B57B /* NotionAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E42D4E470001957D4AED049D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526C3C736C5B2C63DD53CE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C678C01B5EA93C1F1A39B168;
+			remoteInfo = NotionQuotesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		077CE5821EB3889AF48ADC15 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EB205EBF589AF7E3A303FFD /* Notion Quotes Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C382AE021050E5961C9B57B /* NotionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionAPI.swift; sourceTree = "<group>"; };
+		0FFD5BCAABBF7AD75B9BD924 /* Notion Quotes Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notion Quotes Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4AC39BD347B6E4FE65251B /* WidgetRefreshIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRefreshIntent.swift; sourceTree = "<group>"; };
+		3FB807D4EA706EE915D69773 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		45E051FB513AC1B4D51F213F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4A1FF865250B2BB90D82B194 /* SharedFileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFileConfig.swift; sourceTree = "<group>"; };
+		5D9261541AD29C00A6AB2296 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6FDC0B4E845B624BCB52C44B /* Notion Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notion Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73840FF972449026C65E8C1C /* NotionQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionQuotesApp.swift; sourceTree = "<group>"; };
+		85B33A0D852CD1AD0339CB8C /* QuoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStore.swift; sourceTree = "<group>"; };
+		86AD0049987D1BDFAA36046F /* NotionQuotesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotionQuotesWidget.entitlements; sourceTree = "<group>"; };
+		96FFDAB24B1149AD7FFC37FD /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		ABC3DDF1C9EC763008E2F7BC /* NotionQuotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotionQuotes.entitlements; sourceTree = "<group>"; };
+		B18812C71E5B039305935A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E0E300F7A72DBFA4B7604CF1 /* NotionQuotesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionQuotesWidget.swift; sourceTree = "<group>"; };
+		E821F9E05102A3923AC2CC1D /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		230279C3CCA26154EDD9F262 = {
+			isa = PBXGroup;
+			children = (
+				A5D9BBD337E102047BFBC603 /* NotionQuotes */,
+				8C3067EF4FD54C6949CAECAE /* NotionQuotesWidget */,
+				9FCA155B5EED8B0DFCA6F0C5 /* Shared */,
+				7DD6DE35D321F24DA0C49805 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD6DE35D321F24DA0C49805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FDC0B4E845B624BCB52C44B /* Notion Quotes.app */,
+				0FFD5BCAABBF7AD75B9BD924 /* Notion Quotes Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3067EF4FD54C6949CAECAE /* NotionQuotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				45E051FB513AC1B4D51F213F /* Info.plist */,
+				86AD0049987D1BDFAA36046F /* NotionQuotesWidget.entitlements */,
+				E0E300F7A72DBFA4B7604CF1 /* NotionQuotesWidget.swift */,
+			);
+			path = NotionQuotesWidget;
+			sourceTree = "<group>";
+		};
+		9FCA155B5EED8B0DFCA6F0C5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0C382AE021050E5961C9B57B /* NotionAPI.swift */,
+				3FB807D4EA706EE915D69773 /* Quote.swift */,
+				85B33A0D852CD1AD0339CB8C /* QuoteStore.swift */,
+				E821F9E05102A3923AC2CC1D /* SharedConstants.swift */,
+				4A1FF865250B2BB90D82B194 /* SharedFileConfig.swift */,
+				3A4AC39BD347B6E4FE65251B /* WidgetRefreshIntent.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A5D9BBD337E102047BFBC603 /* NotionQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				96FFDAB24B1149AD7FFC37FD /* AppViewModel.swift */,
+				5D9261541AD29C00A6AB2296 /* ContentView.swift */,
+				B18812C71E5B039305935A37 /* Info.plist */,
+				ABC3DDF1C9EC763008E2F7BC /* NotionQuotes.entitlements */,
+				73840FF972449026C65E8C1C /* NotionQuotesApp.swift */,
+			);
+			path = NotionQuotes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		357622F28205EE66A7DFC0CD /* NotionQuotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105198B8A8B06C5CE23697DF /* Build configuration list for PBXNativeTarget "NotionQuotes" */;
+			buildPhases = (
+				3F0BB63F210AA69B72990478 /* Sources */,
+				077CE5821EB3889AF48ADC15 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659642F0E3B0114A9693BDE4 /* PBXTargetDependency */,
+			);
+			name = NotionQuotes;
+			packageProductDependencies = (
+			);
+			productName = NotionQuotes;
+			productReference = 6FDC0B4E845B624BCB52C44B /* Notion Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C678C01B5EA93C1F1A39B168 /* NotionQuotesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAEADCA1B006B8587C95050D /* Build configuration list for PBXNativeTarget "NotionQuotesWidgetExtension" */;
+			buildPhases = (
+				5BB2C0E90BF1B0616607DCD5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotionQuotesWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = NotionQuotesWidgetExtension;
+			productReference = 0FFD5BCAABBF7AD75B9BD924 /* Notion Quotes Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526C3C736C5B2C63DD53CE5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 4FE01C8C6524C635331D5312 /* Build configuration list for PBXProject "NotionQuotesWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 230279C3CCA26154EDD9F262;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				357622F28205EE66A7DFC0CD /* NotionQuotes */,
+				C678C01B5EA93C1F1A39B168 /* NotionQuotesWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0BB63F210AA69B72990478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C87003795D5A7CBB5C1795 /* AppViewModel.swift in Sources */,
+				C49D2161C1FFE96D49938B92 /* ContentView.swift in Sources */,
+				EA880990A09848825842D6DB /* NotionAPI.swift in Sources */,
+				8698538D51283E66D2868769 /* NotionQuotesApp.swift in Sources */,
+				11BD38CF67216BFA0A4AFE7F /* Quote.swift in Sources */,
+				B07A835ACD4218946121509E /* QuoteStore.swift in Sources */,
+				B8CCCA181436432CC226E9C7 /* SharedConstants.swift in Sources */,
+				D1F561DC462D5BFE64116DED /* SharedFileConfig.swift in Sources */,
+				211D31B480170705A7376A31 /* WidgetRefreshIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB2C0E90BF1B0616607DCD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22097DB6BC8C42E1DA7E0A4 /* NotionAPI.swift in Sources */,
+				D8FB57F7997A0882BCFCF172 /* NotionQuotesWidget.swift in Sources */,
+				CBBE96EE87D1BF764D39F87F /* Quote.swift in Sources */,
+				0FAB6ED115F39AC9B3ABA8E4 /* QuoteStore.swift in Sources */,
+				20A947EFD6D8543C0B9DDD81 /* SharedConstants.swift in Sources */,
+				9ACFEE7A4B4BA74EE4C4C6CC /* SharedFileConfig.swift in Sources */,
+				4869C13402F4633BE92E2B1F /* WidgetRefreshIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659642F0E3B0114A9693BDE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C678C01B5EA93C1F1A39B168 /* NotionQuotesWidgetExtension */;
+			targetProxy = E42D4E470001957D4AED049D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12E9F5FB54F4915DAA972D3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		4BC654463BC9FC55F9E3DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotionQuotesWidget/NotionQuotesWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = ML6778S3PZ;
+				INFOPLIST_FILE = NotionQuotesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanlamela.NotionQuotes.widget;
+				PRODUCT_NAME = "Notion Quotes Widget";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		55DC18094D0B16C9ED06A843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NotionQuotes/NotionQuotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = ML6778S3PZ;
+				INFOPLIST_FILE = NotionQuotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanlamela.NotionQuotes;
+				PRODUCT_NAME = "Notion Quotes";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6ECEABA1B60AE35E69477555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotionQuotesWidget/NotionQuotesWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = ML6778S3PZ;
+				INFOPLIST_FILE = NotionQuotesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanlamela.NotionQuotes.widget;
+				PRODUCT_NAME = "Notion Quotes Widget";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C091C383BE9455B4D30F309E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		C8DC43BC870226585FD6C3A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NotionQuotes/NotionQuotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = ML6778S3PZ;
+				INFOPLIST_FILE = NotionQuotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanlamela.NotionQuotes;
+				PRODUCT_NAME = "Notion Quotes";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		105198B8A8B06C5CE23697DF /* Build configuration list for PBXNativeTarget "NotionQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DC18094D0B16C9ED06A843 /* Debug */,
+				C8DC43BC870226585FD6C3A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FE01C8C6524C635331D5312 /* Build configuration list for PBXProject "NotionQuotesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C091C383BE9455B4D30F309E /* Debug */,
+				12E9F5FB54F4915DAA972D3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAEADCA1B006B8587C95050D /* Build configuration list for PBXNativeTarget "NotionQuotesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC654463BC9FC55F9E3DB39 /* Debug */,
+				6ECEABA1B60AE35E69477555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 526C3C736C5B2C63DD53CE5B /* Project object */;
+}

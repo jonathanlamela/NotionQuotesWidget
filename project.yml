@@ -1,0 +1,59 @@
+name: NotionQuotesWidget
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+targets:
+  NotionQuotes:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: NotionQuotes
+      - path: Shared
+    info:
+      path: NotionQuotes/Info.plist
+      properties:
+        CFBundleDisplayName: Notion Quotes
+        LSApplicationCategoryType: public.app-category.productivity
+        NSPrincipalClass: NSApplication
+    entitlements:
+      path: NotionQuotes/NotionQuotes.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jonathanlamela.NotionQuotes
+        PRODUCT_NAME: Notion Quotes
+        CODE_SIGN_ENTITLEMENTS: NotionQuotes/NotionQuotes.entitlements
+    dependencies:
+      - target: NotionQuotesWidgetExtension
+        embed: true
+  NotionQuotesWidgetExtension:
+    type: app-extension
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: NotionQuotesWidget
+      - path: Shared
+    info:
+      path: NotionQuotesWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Notion Quotes Widget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).NotionQuotesWidgetBundle
+    entitlements:
+      path: NotionQuotesWidget/NotionQuotesWidget.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jonathanlamela.NotionQuotes.widget
+        PRODUCT_NAME: Notion Quotes Widget
+        CODE_SIGN_ENTITLEMENTS: NotionQuotesWidget/NotionQuotesWidget.entitlements
+schemes:
+  NotionQuotes:
+    build:
+      targets:
+        NotionQuotes: all
+        NotionQuotesWidgetExtension: all
+    run:
+      config: Debug
